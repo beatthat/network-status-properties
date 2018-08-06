@@ -5,7 +5,7 @@ using BeatThat.StateStores;
 
 namespace BeatThat.NetworkStatus.Properties
 {
-    public class BindIsNetworkStatusConnected : UpdatesPropertyOnNotifications<IsNetworkStatusConnected, bool>
+    public class BindHasNetworkError : UpdatesPropertyOnNotifications<HasNetworkError, bool>
     {
         protected override void GetUpdateNotifications(ICollection<string> notifications)
         {
@@ -16,7 +16,7 @@ namespace BeatThat.NetworkStatus.Properties
         {
             get
             {
-                return this.networkStatus.stateData.hasNetworkError == false;
+                return this.networkStatus.stateData.hasNetworkError;
             }
         }
 
