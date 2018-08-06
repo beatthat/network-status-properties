@@ -1,7 +1,7 @@
 {
   "name": "network-status-properties",
   "scope": "beatthat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provides connection status from network-status package as a property, bindable to animators, etc.",
   "main": "index.js",
   "scripts": {
